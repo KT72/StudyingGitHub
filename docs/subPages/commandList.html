@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <title>StudyingGitHub：Gitコマンドリスト</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <a href="../index.html">top</a>
+        <h1>Gitのコマンドをまとめていきます</h1>
+        <p>勉強の中で出てきたコマンドを追加していきます。</p>
+        <p>VSCodeで作業しているため、基本的な管理はコマンドなくてもできますが最終的にはコマンドが必要になる。</p>
+
+        <h2>コマンドリスト</h2>
+        <h3>Gitの設定に関するコマンド（初回必須）</h3>
+        <ol>
+            <li>git config --list :Gitの設定を確認</li>
+            <li>git config --global user.name "NAME"	:ユーザ名の登録</li>
+            <li>git config --global user.email "ADDRESS"	：メールアドレスの登録</li>
+        </ol>
+        <h3>Gitの操作に関するコマンド（必要最小限）</h3>
+        <ol>
+            <li>git init :リポジトリの作成</li>
+            <li>git status :バージョン管理する変更があるかどうか確認できる</li>
+            <li>git add --all :変更をステージにすべて登録　--allでなくファイル名指定で個別登録可能</li>
+            <li>git commit -m "コメント" :一行コメントをつけて履歴を登録</li>
+            <li>git log --oneline :変更履歴のハッシュ値とリストとコメントを一行で表示</li>
+            <li>git checkout ハッシュ値 ：ハッシュ値の示す履歴を呼び出す（その履歴に移動）</li>
+            <li>git checkout master :最新のマスター履歴に戻る</li>
+            <li>git reset --hard ハッシュ値 :巻き戻した履歴以降をなかったことにする</li>
+        </ol>
+        <h3>GitHubの操作に関するコマンド（必要最小限）</h3>
+        <ol>
+            <li>git clone [URL]：GitHubからリポジトリをコピー（クローン：管理者は持ち主）</li>
+            <li>git branch [ブランチ名]：履歴の分岐（元の履歴を汚さず作業可能）</li>
+            <li>git merge [結合したいブランチ名]：今のブランチに指定したブランチを結合（git checkout master：masterに戻ってからmasterに結合が多い）</li>
+            <li>git branch -d [削除したいブランチ名]：結合後、残ったブランチを削除する場合が多い</li>
+            <li>git push origin：クローンもとにブランチを渡す（管理者の場合はmasterも可能だが、他社のリポジトリは別ブランチが必要）</li>
+        </ol>
+    </body>
+
+</html>
