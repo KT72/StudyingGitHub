@@ -29,13 +29,13 @@
             <li>git checkout ハッシュ値 ：ハッシュ値の示す履歴を呼び出す（その履歴に移動）</li>
             <li>git checkout master :最新のマスター履歴に戻る</li>
             <li>git reset --hard ハッシュ値 :巻き戻した履歴以降をなかったことにする</li>
+            <li>git branch [ブランチ名]：履歴の分岐（元の履歴を汚さず作業可能、リモートリポジトリへのプルリクエストに必要）</li>
+            <li>git merge [結合したいブランチ名]：今のブランチに指定したブランチを結合（git checkout master：masterに戻ってからmasterに結合が多い）</li>
+            <li>git branch -d [削除したいブランチ名]：結合後、残ったブランチを削除する場合が多い</li>
         </ol>
         <h3>GitHubの操作に関するコマンド（必要最小限）</h3>
         <ol>
             <li>git clone [URL]：GitHubからリポジトリをコピー（クローン：管理者は持ち主）</li>
-            <li>git branch [ブランチ名]：履歴の分岐（元の履歴を汚さず作業可能）</li>
-            <li>git merge [結合したいブランチ名]：今のブランチに指定したブランチを結合（git checkout master：masterに戻ってからmasterに結合が多い）</li>
-            <li>git branch -d [削除したいブランチ名]：結合後、残ったブランチを削除する場合が多い</li>
             <li>git push origin：クローンもとにブランチを渡す（管理者の場合はmasterも可能だが、他社のリポジトリは別ブランチが必要）</li>
         </ol>
     </body>
