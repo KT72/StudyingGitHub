@@ -37,6 +37,9 @@
         <ol>
             <li>git clone [URL]：GitHubからリポジトリをコピー（クローン：管理者は持ち主）</li>
             <li>git push origin：クローンもとにブランチを渡す（管理者の場合はmasterも可能だが、他社のリポジトリは別ブランチが必要）</li>
+            <li>git fetch origin master：リモートからリポジトリを取り込みます</li>
+            <li>git merge origin/master：フェッチしたブランチを結合します</li>
+            <li>git pull origin master：フェッチとマージを同時に行います（結合してよいかどうかで使い分けて、わからないならフェッチ？）</li>
         </ol>
     </body>
 
